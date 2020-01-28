@@ -1,29 +1,117 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i|Roboto:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Barber Shop</title>
 </head>
 <body>
 
     <header class="header">
-        <div class="logo">
-            <img src="assets/img/logo.png" alt="logo" class="logo__image">
-        </div>
-        <div class="img">
-            <img src="assets/img/post-image.jpg" alt="logo" class="logo__image">
+        <nav class="navigation navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <img class="navigation__image" src="assets/img/logo.png" alt="Logo Barber Shop">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trabajos">Trabajos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation__link-ruddypink" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#horas">Horas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="principal-image">
+            <img src="assets/img/post-image.jpg" alt="imagen principal" class="principal-image__image">
+            <h1 class="principal-image__texto text-white">5 formas de cuidar tu corte de cabello</h1>
         </div>
     </header>
 
     <main class="main">
 
+        <h3 class="mt-5 mb-5">12 de abril de 2018</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu faucibus vel, sollicitudin ut velit.</p>
+        <p>Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel pellentesque augue. Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat.</p>
+        <p>Suspendisse vel lobortis lectus, eu convallis mauris. Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend. </p>
+        <p>Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi sapien eget ex.</p>
+        <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. <span>Praesent tincidunt convallis</span> ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.</p>
+
+        <section class="botones mt-4">
+            <button type="button" class="btn btn-secondary botones__boton botones__boton-small">Compartir</button>
+            <button type="button" class="btn btn-secondary botones__boton botones__boton-medium">Comentar en Twitter</button>
+        </section>
+
+
+        <div class="col-12 text-center">
+            <div class="row autor pt-5 pb-5">
+                <div class="col-md-4 autor__imagen">
+                    <img class="autor__image" src="assets/img/naomi-thai.png" alt="foto naomi thai">
+                </div>
+                <div class="col-md-4 autor__marca pt-5 text-sm-left">
+                    <h2>Naomi Thai</h2>
+                    <p class="autor__link-ruddypink mb-1">@Naothai</p>
+                    <p class="autor__link-ruddypink">depelos.com</p>
+                </div>
+                <div class="col-md-4 autor__descripcion d-none d-md-block pt-5 text-sm-left">
+                    <p>Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus. </p>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
-    <footer class="footer">
+    <section class="paginador">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link paginador__link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link paginador__link" href="#">1</a>
+            </li>
+            <li class="page-item active ">
+                <a class="page-link paginador__link paginador__link-act" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item">
+                <a class="page-link paginador__link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link paginador__link" href="#">Siguiente</a>
+            </li>
+        </ul>
+    </section>
 
+
+
+    <footer class="footer text-center">
+        <img class="footer__image" src="assets/img/logo.png" alt="Logo Barber Shop">
     </footer>
+
+    <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--Popper JS 1.14.3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!--Bootstrap JS 4.2.1-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--Mi script-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

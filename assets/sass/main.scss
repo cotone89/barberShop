@@ -1,15 +1,16 @@
 // main.scss # Manifest File
 
+//vendors
+@import 'vendors/bootstrap/scss/bootstrap';
+
 //abstracts
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-//vendors
-
 //base
 @import 'base/base';
 @import 'base/reset';
-@import 'base/tipography';
+@import 'base/typography';
 
 //layout
 @import 'layout/footer';
@@ -20,7 +21,6 @@
 @import 'components/buttons';
 @import 'components/links';
 @import 'components/pagination';
-@import 'components/thumbnails';
 
 //pages
 
